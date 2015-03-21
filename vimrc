@@ -151,3 +151,17 @@ let g:tagbar_type_coffee = {
         \ 'f:fields',
     \ ]
 \ }
+
+" ctags less
+let g:tagbar_type_less = {
+    \ 'ctagstype' : 'less',
+    \ 'kinds'     : [
+        \ 'c:classes',
+        \ 'm:methods',
+        \ 'f:functions',
+        \ 'v:variables',
+        \ 'f:fields',
+    \ ]
+\ }
+
+
