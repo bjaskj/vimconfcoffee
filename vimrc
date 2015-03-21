@@ -118,6 +118,10 @@ filetype plugin indent on
 " Tagbar stuff
 nmap <F8> :TagbarToggle<CR>
 
+" Nerd Tree
+map <F9> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrows=0
+
 "copy
 vmap <F7> "+ygv"zy`>
 "paste (Shift-F7 to paste after normal cursor, Ctrl-F7 to paste over visual selection)
