@@ -101,7 +101,7 @@ if has("gui_running")
     set guioptions-=r
     set guioptions-=L
     set guioptions+=a
-    set guioptions-=m
+    "set guioptions-=m
     colo molokai2
     set listchars=tab:?\ ,eol:?
 else
@@ -112,7 +112,27 @@ endif
 " ==== Pathogen
 
 execute pathogen#infect()
+
 filetype plugin indent on
 
 " Tagbar stuff
 nmap <F8> :TagbarToggle<CR>
+
+"copy
+vmap <F7> "+ygv"zy`>
+"paste (Shift-F7 to paste after normal cursor, Ctrl-F7 to paste over visual selection)
+nmap <F7> "zgP
+nmap <S-F7> "zgp
+imap <F7> <C-r><C-o>z
+vmap <C-F7> "zp`]
+cmap <F7> <C-r><C-o>z
+"copy register
+
+autocmd FocusGained * let @z=@+
+
+" Bjarte's tweaks
+set guifont=Menlo:h14
+if has("gui_gtk2")
+    set guifont=Monospace\ 11
+endif
+
