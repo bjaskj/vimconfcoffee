@@ -23,6 +23,8 @@ set visualbell
 set t_vb=
 set cmdheight=2
 
+set encoding=utf-8
+
 " Quickly time out on keycodes, but never time out on mappings
 set notimeout ttimeout ttimeoutlen=200
 
