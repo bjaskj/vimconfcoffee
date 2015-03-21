@@ -10,11 +10,6 @@ syntax on
 set hidden
 set wildmenu
 set showcmd
-set hlsearch
-
-" Use case insensitive search, except when using capital letters
-set ignorecase
-set smartcase
 
 " Allow backspacing over autoindent, line breaks and start of insert action
 set backspace=indent,eol,start
@@ -44,6 +39,59 @@ set expandtab
 " four characters wide.
 set shiftwidth=4
 set tabstop=4
+
+" set undofile
+set shell=bin/bash
+set lazyredraw
+set matchtime=3
+
+" Changing leader key
+let mapleader = ","
+
+" Set title to window
+set title
+
+" To  show special characters in Vim
+set listchars=tab:?\ ,eol:?
+
+" Make vim able to edit crontab fields again
+set backupskip=/tmp/*,/private/tmp*
+
+" Settings for searching and moving
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set showmatch
+set hlsearch
+nnoremap <leader><space> :noh<cr>
+nnoremap <tab> %
+vnoremap <tab> %
+
+" Make Vim to handle long lines nicely
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+
+" Get rid of help keys
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
+" Working with split screen nicely, resize split when window is resized
+au VimResized * :wincmd = 
+
+" Make sure vim returns to the same line when we reopen a file
+augroup line_return
+        au!
+        au BufReadPost *
+            \ if line("'\"") > 0 && line("'\"") <= line("$") |
+            \ execute 'normal! g`"zvzz' |
+            \ endif
+augroup END
+nnoremap g; g;zz
 
 " ==== Pathogen
 
