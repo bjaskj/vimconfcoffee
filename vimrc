@@ -136,3 +136,14 @@ if has("gui_gtk2")
     set guifont=Monospace\ 11
 endif
 
+" ctags for coffee script
+let g:tagbar_type_coffee = {
+    \ 'ctagstype' : 'coffee',
+    \ 'kinds'     : [
+        \ 'c:classes',
+        \ 'm:methods',
+        \ 'f:functions',
+        \ 'v:variables',
+        \ 'f:fields',
+    \ ]
+\ }
