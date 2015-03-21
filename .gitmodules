@@ -22,3 +22,18 @@
 	path = bundle/YouCompleteMe
     url = https://github.com/Valloric/YouCompleteMe
     ignore = dirty
+[submodule "bundle/simple-pairs"]
+	path = bundle/simple-pairs
+	url = https://github.com/vim-scripts/simple-pairs
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic
+[submodule "bundle/vim-jade"]
+	path = bundle/vim-jade
+	url = https://github.com/digitaltoad/vim-jade
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = https://github.com/groenewege/vim-less
+[submodule "bundle/vim-stylus"]
+	path = bundle/vim-stylus
+	url = https://github.com/wavded/vim-stylus
