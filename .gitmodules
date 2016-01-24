@@ -46,3 +46,6 @@
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
     ignore = dirty
+[submodule "bundle/c.vim"]
+	path = bundle/c.vim
+	url = https://github.com/vim-scripts/c.vim.git
